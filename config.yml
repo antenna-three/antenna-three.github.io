@@ -1,38 +1,44 @@
 baseURL: https://antenna-three.github.io/
 title: antenna-three.github.io
-theme: hugo-coder
+theme: PaperMod
 defaultcontentlanguage: ja
 
-paginate: 20
-
-pygmentsstyle: bw
-pygmentscodefences: true
-pygmentscodefencesguesssyntax: true
-
-disqusShortname: antenna-three
+paginate: 5
+buildDrafts: false
+buildFuture: false
+buildExpired: false
 
 params:
-  author: antenna-three
-  info: IT Engineer at pluszero
+  title: antenna-three.github.io
   description: antenna-three's blog and portfolio
-  keywords: blog,developer,personal
-  katex: true
+  author: antenna-three
+  keywords: [blog, portfolio]
 
-  social:
-    - name: GitHub
-      icon: fa fa-github fa-2x
-      weight: 1
+  profileMode:
+    enabled: true
+    title: antenna-three
+    subtitle: IT engineer
+    imageUrl: images/profile.jpg
+    imageWidth: 120
+    imageHeight: 120
+
+  socialIcons:
+    - name: github
       url: https://github.com/antenna-three
-    - name: Twitter
-      icon: fa fa-twitter fa-2x
-      weight: 2
+    - name: twitter
       url: https://twitter.com/antenna_three
 
 menu:
   main:
-    - name: Blog
-      weight: 1
-      url: posts/
-    - name: About
-      weight: 1
-      url: about/
+    - identifer: blog
+      name: blog
+      url: /blog
+      weight: 10
+    - identifer: about
+      name: about
+      url: /about
+      weight: 10
+    - identifer: works
+      name: works
+      url: /works
+      weight: 10
